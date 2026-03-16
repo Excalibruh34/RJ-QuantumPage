@@ -1,0 +1,100 @@
+/* Body background */
+body{
+    background-image: url("Background.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+}
+/* Container for the login form and logo */
+.login-container{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+/* Logo styling */
+.logo {
+    width: 710px;
+    height: auto;
+    margin-bottom: -135px; 
+    margin-left: auto;
+    margin-right: auto;
+    filter: drop-shadow(0 0 15px rgb(255, 136, 0));
+}
+
+/* User Form */
+form{
+    
+background: #111; 
+padding: 100px; 
+border-radius: 20px;
+border: 3px solid #8A6A00; 
+box-shadow: 0 0 20px #C9A227;
+width: 300px;
+ 
+}
+
+/* Labels */
+label{
+    color: #f3c734;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 2px;
+}
+
+/* Input fields */
+input[type="text"],
+input[type="password"]{
+    width: 100%;
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid gold;
+    background: #000;
+    color: gold;
+    outline: none;
+    margin-bottom: 20px; /* SPACE between fields of logo and User login form*/
+}
+
+/* Input focus glow */
+input[type="text"]:focus,
+input[type="password"]:focus{
+    box-shadow: 0 0 8px gold;
+}
+
+/* Checkbox + Remember Me inline */
+#remember{
+    margin-right: 3px;
+}
+
+label[for="remember"]{
+    display: inline;
+}
+
+/* Buttons */
+button{
+    padding: 8px 15px;
+    margin-top: 5px;
+    border-radius: 6px;
+    border: 1px solid gold;
+    background: gold;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Button hover */
+button:hover{
+    background: black;
+    color: gold;
+    box-shadow: 0 0 10px gold;
+}
+
+

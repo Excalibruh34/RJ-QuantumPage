@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>USERFORM NI BURNIK</title>
+    <link rel="stylesheet" href="Design.css">
+</head>
+
+<body>
+
+<div class="login-container">
+
+    <!-- Logo -->
+    <h1>
+        <img src="Logo.png" alt="Logo" class="logo">
+    </h1>
+
+    <!-- Login Form -->
+    <form onsubmit="checkLogin(); return false;">
+
+        <label for="Username">Username:</label><br>
+        <input type="text" id="Username" name="Username" minlength="3" maxlength="10"><br><br>
+
+        <label for="Password">Password:</label><br>
+        <input type="password" id="Password" name="Password" minlength="3" maxlength="10"><br><br>
+
+        <input type="checkbox" id="remember" name="remember">
+        <label for="remember">Remember Me</label><br><br>
+
+        <p id="error-message" style="color:red; display:none;">
+            Invalid Username or Password
+        </p>
+
+      <button type="submit">Login</button>
+    <button type="button" onclick="clearForm()">Clear</button>
+
+    </form>
+
+</div>
+
+<!-- JavaScript -->
+<script src="Function.js"></script>
+
+</body>
+</html>
